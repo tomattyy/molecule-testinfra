@@ -1,0 +1,13 @@
+VALIDAÇÃO ESTÁTICA - RESULTADOS
+
+- Todos os 4 arquivos YAML: parseados corretamente com PyYAML.
+- test_default.py: sintaxe Python válida.
+- Auditoria do Testinfra: execução com host SIMULADO aprovada quando as 4 condições são verdadeiras.
+- Auditoria do Testinfra: 4 casos de host SIMULADO com erro foram detectados (uma condição falsa de cada vez).
+- Namespace da role em meta/main.yml coincide com a referência do converge.yml.
+
+LIMITAÇÃO:
+Docker, Ansible e Molecule não estão disponíveis no ambiente que gerou estes artefatos.
+O ciclo real `molecule test` NÃO foi executado. Os testes com host simulado NÃO comprovam
+instalação de Nginx, systemd ou porta 80. Execute `molecule test` em um ambiente Linux
+com Docker para obter logs de create, converge, idempotence, verify e destroy.

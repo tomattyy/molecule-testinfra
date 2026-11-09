@@ -1,0 +1,11 @@
+---
+# Etapa 4: Molecule aplica a role dentro do contêiner de teste.
+- name: Converge
+  hosts: all
+  become: true
+  gather_facts: true
+
+  tasks:
+    - name: Aplicar a role que prepara o servidor Nginx
+      ansible.builtin.include_role:
+        name: laboratorio.servidor_nginx

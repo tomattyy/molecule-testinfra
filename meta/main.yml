@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: "Oska Mattheus"
+  namespace: laboratorio
+  role_name: servidor_nginx
+  description: "Provisiona e inicia Nginx no Ubuntu com Ansible."
+  license: MIT
+  min_ansible_version: "2.15"
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+  galaxy_tags:
+    - nginx
+    - web
+    - automation
+
+dependencies: []
